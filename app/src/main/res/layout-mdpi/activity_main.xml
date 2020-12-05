@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nome_text"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/bold"
+        android:gravity="right"
+        android:scrollHorizontally="true"
+        android:singleLine="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sair_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_action_exit" />
+
+    <LinearLayout
+        android:id="@+id/truck_box"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/truck_box"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_text">
+
+        <ImageView
+            android:id="@+id/truck_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/truck"
+            android:backgroundTint="@color/colorButtonDark" />
+
+        <TextView
+            android:id="@+id/qt_caminhao_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:fontFamily="@font/bold"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/truck_box">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linha_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/nova_entrega_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/functions_box"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/entrega_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/nova_entrega" />
+
+                    <TextView
+                        android:id="@+id/nova_entrega_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_gradient"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="NOVA ENTREGA"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0" />
+
+                <LinearLayout
+                    android:id="@+id/historico_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/functions_box"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/historico_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/historico" />
+
+                    <TextView
+                        android:id="@+id/historico_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_gradient"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="HISTÓRICO"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/linha_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/gerencia_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/functions_box"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/gerencia_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ger_truck" />
+
+                    <TextView
+                        android:id="@+id/gerencia_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_gradient"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="GERENCIAR CAMINHÕES"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0" />
+
+                <LinearLayout
+                    android:id="@+id/ambev_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/functions_box"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ambev_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ambev_icon" />
+
+                    <TextView
+                        android:id="@+id/ambev_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_gradient"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="VALORES AMBEV"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/linha_3"
+
+                android:layout_width="260dp"
+                android:layout_height="120dp"
+                android:background="@drawable/gradient_salario"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/valor_layout_abv"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/receber_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/light"
+                        android:text="À RECEBER:"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/salario_valor_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_receber_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:id="@+id/coletar_txt"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_gradient"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="RECEBER PAGAMENTO"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/linha_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/despesa_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/functions_box"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/despesa_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/despesa" />
+
+                    <TextView
+                        android:id="@+id/despesa_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_gradient"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ADICIONAR DESPESA"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0" />
+
+                <LinearLayout
+                    android:id="@+id/extrato_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/functions_box"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/extrato_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/extrato" />
+
+                    <TextView
+                        android:id="@+id/extrato_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_gradient"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="EXTRATO GERAL"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

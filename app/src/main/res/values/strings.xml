@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Controle Caminhões</string>
+    <string-array name="todos_locais">
+        <item>Agulhas Negras</item>
+        <item>Amparo</item>
+        <item>Andrade Pinto</item>
+        <item>Areal</item>
+        <item>Arrozal</item>
+        <item>Barra Mansa</item>
+        <item>Barra do Piraí</item>
+        <item>Barão de Juparanã</item>
+        <item>Boa Sorte</item>
+        <item>Califórnia</item>
+        <item>Califórnia da Barra</item>
+        <item>Campos Eliseos</item>
+        <item>Colônia</item>
+        <item>Conservatória</item>
+        <item>Dorândia</item>
+        <item>Engenheiro Passos</item>
+        <item>Engenheiro Paulo de Frontin</item>
+        <item>Falcão</item>
+        <item>Floriano</item>
+        <item>Getulândia</item>
+        <item>Glicério</item>
+        <item>Ipiabas</item>
+        <item>Itatiaia</item>
+        <item>Lídice</item>
+        <item>Mendes</item>
+        <item>Nossa Senhora do Amparo</item>
+        <item>Parapeuna</item>
+        <item>Passa Três</item>
+        <item>Penedo</item>
+        <item>Pentagna</item>
+        <item>Pinheiral</item>
+        <item>Piraí</item>
+        <item>Porto Real</item>
+        <item>Quatis</item>
+        <item>Resende</item>
+        <item>Rialto</item>
+        <item>Rio Claro</item>
+        <item>Rio das Flores</item>
+        <item>Sacra Família do Tin</item>
+        <item>Santa Clara</item>
+        <item>Santa Cruz</item>
+        <item>Santa Isabel</item>
+        <item>Santa Maria</item>
+        <item>Santanésia</item>
+        <item>Serrinha</item>
+        <item>São José do Turvo</item>
+        <item>Valença</item>
+        <item>Vargem Alegre</item>
+        <item>Vassouras</item>
+        <item>Visconde de Mauá</item>
+        <item>Volta Redonda</item>
+    </string-array>
+</resources>

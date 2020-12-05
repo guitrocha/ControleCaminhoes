@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceberPagamentoActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/voltar_pagamento_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pagamento_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/bold"
+        android:text="Pagamento"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voltar_pagamento_button" />
+
+    <TextView
+        android:id="@+id/data_box_pagamento_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/dropdown_white"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:gravity="center_vertical"
+        android:hint="Data Início"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pagamento_text" />
+
+    <TextView
+        android:id="@+id/data_box_pagamento_fim"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/dropdown_white"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:gravity="center_vertical"
+        android:hint="Data Fim"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/data_box_pagamento_inicio" />
+
+    <TextView
+        android:id="@+id/placa_caminhao_box_pagamento"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/dropdown_white"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:gravity="center_vertical"
+        android:hint="Placa Caminhão"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/data_box_pagamento_fim" />
+
+    <TextView
+        android:id="@+id/data_box_pagamento_dia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/dropdown_white"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:gravity="center_vertical"
+        android:hint="Dia do Pagamento"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/placa_caminhao_box_pagamento" />
+
+    <Button
+        android:id="@+id/add_pagamento_button"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/regular"
+        android:text="Adicionar"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_box_pagamento_dia" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

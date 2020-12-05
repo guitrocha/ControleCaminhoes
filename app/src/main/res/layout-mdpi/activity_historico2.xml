@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HistoricoActivity2">
+
+    <ImageView
+        android:id="@+id/voltar_button_hist2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hist_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/bold"
+        android:scrollHorizontally="true"
+        android:singleLine="false"
+        android:text="Histórico"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/voltar_button_hist2" />
+
+    <TextView
+        android:id="@+id/filtro_dropdown"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/dropdown_white"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:gravity="center_vertical"
+        android:hint="Caminhão"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hist_titulo" />
+
+    <TextView
+        android:id="@+id/mes_dropdown"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/dropdown_white"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:gravity="center_vertical"
+        android:hint="Mês"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtro_dropdown" />
+
+    <TextView
+        android:id="@+id/ano_dropdown"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/dropdown_white"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:gravity="center_vertical"
+        android:hint="Ano"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mes_dropdown" />
+
+    <Button
+        android:id="@+id/buscar_hist_button"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/regular"
+        android:text="Buscar"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ano_dropdown" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

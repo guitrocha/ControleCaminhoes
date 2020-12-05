@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "658123749796",
+    "firebase_url": "https://controle-caminhoes-6f855.firebaseio.com",
+    "project_id": "controle-caminhoes-6f855",
+    "storage_bucket": "controle-caminhoes-6f855.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658123749796:android:757858f9b33410bd332931",
+        "android_client_info": {
+          "package_name": "guit.com.controlecaminhoes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658123749796-0m3i2m5of04p7bcaqnkkav3o1l25v72c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "guit.com.controlecaminhoes",
+            "certificate_hash": "7b64602e5e2ce1f4502f2278572bfc9ca8daf649"
+          }
+        },
+        {
+          "client_id": "658123749796-alrai3n39es2q7krg3r4vnpliaicb71t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALfm38W2sRZCud0eBYmRKHKPVnHZ0wDFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658123749796-alrai3n39es2q7krg3r4vnpliaicb71t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

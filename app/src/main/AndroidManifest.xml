@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="guit.com.controlecaminhoes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ExtratoActivity2"></activity>
+        <activity android:name=".ExtratoActivity" />
+        <activity android:name=".ReceberPagamentoActivity" />
+        <activity android:name=".DespesaActivity" />
+        <activity android:name=".HistoricoActivity2" />
+        <activity android:name=".HistoricoActivity" />
+        <activity android:name=".NovaEntregaActivity" />
+        <activity android:name=".ValoresAmbevActivity" />
+        <activity android:name=".EditarRemoverCaminhao" />
+        <activity android:name=".AdicionarCaminhao" />
+        <activity android:name=".GerenciarCaminhao" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CriarContaActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
